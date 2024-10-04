@@ -14,14 +14,61 @@
 </head>
 
 <body>
-  <div class="wrap-content">
+  <div class="main-content">
     <aside>
       <img class="logo" src="./assets/Logo.svg" alt="Logo">
       <span>Festivite</span>
       <p>Crie um convite digital para o seu evento</p>
     </aside>
     <main>
-      <div>a</div>
+
+      <form action="" method="post" enctype="multipart/form-data">
+        <h1>Crie seu convite</h1>
+        <fieldset>
+          <legend>
+            <img src="./assets/icons/calendar.svg" alt="calendário">
+            <span>Sobre o evento</span>
+          </legend>
+          <div class="input-wrapper">
+            <label for="title">Título</label>
+            <input id="title" type="text" name="title" placeholder="Nome do evento">
+          </div>
+
+          <div class="grid grid-2 gap-1 mt-1">
+            <div class="input-wrapper">
+              <label for="start">Início</label>
+              <input id="start" type="datetime-local" name="start" placeholder="DD/MM/AAAA, --:--">
+            </div>
+            <div class="input-wrapper">
+              <label for="end">Fim</label>
+              <input id="end" type="datetime-local" name="end" placeholder="DD/MM/AAAA, --:--">
+            </div>
+          </div>
+
+          <div class="grid grid-2 gap-1 mt-1">
+            <div class="input-wrapper">
+              <label>Tipo</label>
+
+              <div class="radio-wrapper">
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="type" id="presencial">
+                  <label for="presencial">Presencial</label>
+                </div>
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="type" id="online">
+                  <label for="online">Online</label>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="local">Local</label>
+                <input id="local" type="text" name="local" placeholder="Link ou endereço">
+              </div>
+            </div>
+        </fieldset>
+      </form>
     </main>
   </div>
 </body>

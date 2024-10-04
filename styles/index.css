@@ -1,5 +1,6 @@
 @import url(global.css);
 @import url(aside.css);
+@import url(main.css);
 
 
 body {
@@ -7,7 +8,7 @@ body {
   overflow: hidden;
 
 
-  .wrap-content{
+  .main-content{
     max-width: 1280px;
     width: 100%;
     margin-inline: auto;
@@ -34,6 +35,24 @@ body {
       background-color: var(--shape-body);
       height: 1980px;
       overflow-y: auto;
+      padding-block: 5rem;
     }
   }
+}
+
+
+.grid{
+  display: grid;
+}
+
+.grid-2{
+  grid-template-columns: 1fr 1fr;
+}
+
+.gap-1{
+ gap: 1rem;
+}
+
+.mt-1{
+  margin-top: 1rem;
 }
