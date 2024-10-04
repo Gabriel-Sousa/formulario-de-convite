@@ -1,0 +1,39 @@
+@import url(global.css);
+@import url(aside.css);
+
+
+body {
+  background-color: var(--shape-background);
+  overflow: hidden;
+
+
+  .wrap-content{
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+
+    padding: 1.25rem;
+
+    aside{
+      width: 31.25%;
+      background: url(../assets/Background.png) ;
+      background-size: cover;
+      height: 728px;
+
+      padding: 2rem;
+      border-radius: 0.5rem;
+
+    }
+
+    main{
+      width: 64.06%;
+      background-color: var(--shape-body);
+      height: 1980px;
+      overflow-y: auto;
+    }
+  }
+}
