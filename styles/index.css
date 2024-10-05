@@ -38,6 +38,7 @@ body {
       overflow: auto;
       padding-block: 5rem;
       height: 100vh;
+      border-radius: 0.5rem;
     }
   }
 }
@@ -98,6 +99,7 @@ body {
 .bg-navy {
   background-color: var(--navy);
 }
+
 .bg-danger {
   background-color: var(--danger);
 }
