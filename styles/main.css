@@ -252,6 +252,7 @@ main{
           border-radius: 8px;
           position: relative;
           border: 2px solid var(--input-stroke);
+          cursor: pointer;
           
 
           label{
@@ -278,6 +279,56 @@ main{
           }
         
         }
+      }
+    }
+
+    .style-upload-container{
+      display: grid;
+      grid-template-columns: 31.43% 65.71%;
+
+      .style-container{        
+          margin-top: 1.75rem;
+
+          
+
+          .style-wrapper{
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            position: relative;
+            cursor: pointer;
+
+            margin-top: 1rem;
+
+            &:has(:checked) svg path{
+              fill: var(--brand-light);
+              
+            }
+
+            #styleinput{
+              width: 64px ;
+            }
+              
+            & input,
+            & input:focus,
+            & input:hover{
+              all: unset;
+              position: absolute;
+              inset: 0;
+            }
+
+            .style-image{
+              background: url(../assets/off.png);
+              width: 64px;
+              height: 32px;
+              
+            }
+
+            &:has(:checked) .style-image{
+              background: url(../assets/on.png);
+            }
+          }
+
       }
     }
     
