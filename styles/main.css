@@ -65,14 +65,15 @@ main{
           color: var(--input-placeholder);
         }
 
-        input:focus:not(:placeholder-shown) {
-          border-color: #28a745; /* Bordas verdes quando o campo está preenchido e focado */
-        }
-
         &:focus, &:focus-within{
           border-color: var(--brand-light);
           outline: 1px solid var(--brand-light);
           
+        }
+
+        &:not(:focus):invalid{
+          border-color: var(--danger);
+          outline: var(--danger);
         }
 
         
@@ -93,6 +94,7 @@ main{
       .radio-wrapper{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 4px;
   
         background-color: var(--input-base);
         width: 100%;
@@ -113,6 +115,11 @@ main{
           align-items: center;
           position: relative;
           cursor: pointer;
+         
+          &:hover{
+            background-color: var(--shape-hover);
+            border-radius: 8px;
+          }
   
           .radio-image{
             width: 16px;
@@ -178,6 +185,12 @@ main{
         border-radius: 8px;
         resize: vertical;
         max-height: 250px;
+
+        &:focus, &:focus-within{
+          border-color: var(--brand-light);
+          outline: 1px solid var(--brand-light);
+          
+        }
       }
       
     }
@@ -208,7 +221,6 @@ main{
             height: 34px;
             border-radius: 999px;
             border: 6px solid var(--shape-button);
-            
           }
           
 
@@ -222,6 +234,10 @@ main{
 
           &:has(:checked) .color{
             outline: 2px solid var(--brand-light);
+          }
+
+          &:hover .color{
+            border-color: var(--shape-hover);
           }
         }
       }
@@ -253,6 +269,12 @@ main{
           position: relative;
           border: 2px solid var(--input-stroke);
           cursor: pointer;
+
+          &:hover{
+            background-color: var(--shape-hover);
+          }
+
+          
           
 
           label{
