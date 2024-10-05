@@ -176,6 +176,51 @@ main{
       }
       
     }
+
+    .colors-container{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.5rem;
+
+      label{
+        font: var(--body-sm);
+        color: var(--text-body);
+      }
+
+      .colors-wrapper{
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+       
+
+        .colors-inner{
+          position: relative;
+          cursor: pointer;
+          width: 34px;
+          
+          .color{
+            width: 34px;
+            height: 34px;
+            border-radius: 999px;
+            border: 6px solid var(--shape-button);
+            
+          }
+          
+
+          & input,
+          & input:focus,
+          & input:hover{
+            all: unset;
+            position: absolute;
+            inset: 0;
+          }
+
+          &:has(:checked) .color{
+            outline: 2px solid var(--brand-light);
+          }
+        }
+      }
+    }
     
   }
 }

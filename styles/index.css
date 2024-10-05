@@ -58,3 +58,46 @@ body {
 .mt-1{
   margin-top: 1rem;
 }
+
+.bg-brand-light{
+  background-color: var(--brand-light);
+}
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.bg-fuschia {
+  background-color: var(--fuschia);
+}
+
+.bg-pink {
+  background-color: var(--pink);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-lime {
+  background-color: var(--lime);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.bg-cyan {
+  background-color: var(--cyan);
+}
+
+.bg-navy {
+  background-color: var(--navy);
+}
+.bg-danger {
+  background-color: var(--danger);
+}
